@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>dream.org</title>
+    
+    
+    
+    
+<style>
+    
+    *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*--Navigation--*/
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar-brand img
+{
+    height: 80px;
+    padding-left: 30px;
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+    display: inline-block;
+}
+.navbar-nav li a
+{
+    float: right;
+    text-align: left; 
+}
+#nav-bar ul li a:hover
+{
+    color: #007bff!important;
+}
+.navbar
+{
+    background: #fff;
+}
+.navbar-toggler
+{
+    border: none!important;
+}
+.nav-link
+{
+    color: #555!important;
+    font-weight: 600;
+    font-size: 16px;
+}
+/*-----SLIDER----*/
+#slider
+{
+    width: 100%;
+}
+.carousel-caption
+{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial!important;
+}
+.carousel-caption h3
+{
+    color: #fff;
+    font-size: 64px;
+}
+/*----About---*/
+#about
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
+#about .btn
+{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.about-content
+{
+    padding-top: 20px;
+}
+/*------serives----------*/
+#services
+{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(_gallery.inspire/photo-1491841550275-ad7854e35ca6.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: #efefef!important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#services h1
+{
+    text-align: center;
+    color: #efefef!important;
+    padding-bottom: 10px;
+}
+#services h1::after
+{
+    content: '';
+    background: #efefef;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+.services
+{
+    margin-top: 40px;
+}
+.icon
+{
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+#services p
+{
+    font-size: 14px;
+    margin-top: 20px;
+    color: #ccc;
+}
+.services .col-md-4:hover  
+{
+    background: #007b77;
+    cursor: pointer;
+    transition: 0.7s;
+}
+/*-----TEAM------*/
+#team
+{
+    text-align: center;
+    color: #555 !important;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+h1::after
+{
+    content: '';
+    background: #007bff;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+
+.profile-pic 
+{
+    margin-top: 25px;
+}
+.profile-pic .img-box
+{
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+.profile-pic .img-box img
+{
+    filter: grayscale(1);   
+}
+.profile-pic .img-box img:hover
+{
+    filter: grayscale(0);
+    cursor: pointer;    
+}
+.profile-pic h2
+{
+    font-size: 22px;
+    margin-top: 15px;
+    color: #007bff!important;
+}
+
+.color a
+{
+   color: #fff;
+   text-align: center;
+   text-decoration: none;
+}
+.color a:hover
+{
+   color: #fff;
+   transform: scale(2.0);
+   text-decoration: none;
+}
+.container.gallery-container {
+    background-color: #fff;
+    color: #35373a;
+    min-height: 100vh;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 25px auto;
+    color: #888;
+    font-size: 18px;
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+
+.tz-gallery .lightbox img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.tz-gallery img {
+    border-radius: 4px;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .container.gallery-container {
+        border-radius: 0;
+    }
+}
+#contact
+{
+    background: #efefef;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #777;
+}
+.contact-form
+{
+    padding: 15px;
+}
+
+::placeholder
+{
+    color: #999 !important;
+}
+.follow
+{
+    background: #fff;
+    padding: 10px
+}
+/*------FOOTER-----------*/
+#footer
+{
+    background: #333;
+}
+.follow label
+{
+    color: #fff;
+}
+.footer li
+{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    background: #333;
+}
+.copyright
+{
+    font-size: 10pt;
+    text-align: center;
+    padding-bottom: 10px;
+    color: grey;
+}
+.footer-main-div
+{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: #272727;
+    padding: 20px 0px;
+    
+}
+.footer-social-icons
+{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.footer-social-icons ul
+{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-social-icons ul li
+{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+    border-radius: 100%;
+    background: #FFF;
+    
+}
+.footer-social-icons ul li a
+{
+    color:#272727 !important;
+    font-size: 25px;
+}
+.footer-social-icons ul li a i
+{
+    line-height: 50px;
+}
+.footer-menu-one
+{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+}
+.footer-menu-one ul
+{
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+}
+.footer-menu-one ul li
+{
+    display: inline-block;
+    margin: 0px 20px;
+}
+.footer-menu-one ul li a
+{
+    font-family: arial;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+     text-decoration: none;
+}
+.footer-menu-two
+{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+}
+.footer-menu-two ul
+{
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+}
+.footer-menu-two ul li
+{
+    display: inline-block;
+    margin: 0px 15px;
+}
+.footer-menu-two ul li a
+{
+    font-family: arial;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+     text-decoration: none;
+}
+
+
+</style>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+    <script src="https://kit.fontawesome.com/b1f1fea349.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+    
+    </head>
+<body>
+    <!---NAVIGATION MENU------>
+    <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#"><img src="_gallery.inspire/20191118_090749.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="nav-bar-nav1 ml-auto">
+      <li class="nav-item active"><a href=“mailto:children@children.org” target=“_top”>email : children@dream.org</a></li>
+          <li class="nav-item active"><a href="tel:8130088239">Phone: 8130088239</a></li>
+      </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#slider">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">ABOUT US</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services">PROGRAMS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#team">GET INVOLVED</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#gallery">GALLERY</a>
+      </li>  
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">CONTACT US</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  
+    </section>
+    <!----SLIDER--->
+    <div id="slider">
+    <div id="headerSlider" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#headerSlider" data-slide-to="0" class="active"></li>
+    <li data-target="#headerSlider" data-slide-to="1"></li>
+    <li data-target="#headerSlider" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="_gallery.inspire/photo-1456439663599-95b042d50252.jpeg" class="d-block w-100" alt="First Image">
+        <div class="carousel-caption">
+        <h3>DREAM ORGANISATION</h3>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="_gallery.inspire/photo-1490424660416-359912d314b3.jpeg" class="d-block w-100" alt="Second Image">
+        <div class="carousel-caption">
+        <h3>EDUCATING FUTURE</h3>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="_gallery.inspire/photo-1513086670993-297187d3a281.jpeg" class="d-block w-100" alt="Third Image">
+        <div class="carousel-caption">
+        <h3>ENVIRONMENTAL CONCERN</h3>
+        </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#headerSlider" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#headerSlider" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+    </div>
+    <!-----ABOUT---->
+    <section id="about">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-6">
+            <h2>About Us</h2>
+            <div class="about-content">
+            Educating children from struggling families.<br/>
+Make helpless children to achieve their dream.<br/>
+Helping financially backward parents in educating their bright children.<br/>
+                Giving quality of education for the children.<br/>
+Help theem to reach the position they dream.<br/>
+Make the future world aware of the environment.<br/>
+Training job-less youth for getting jobs in society.<br/>
+            
+            </div>
+            <button type="button" class="btn btn-primary">
+            Read More>>
+            </button>
+            </div>
+        <div class="col-md-6">
+         <iframe frameborder="0" width="560" height="315" src="https://biteable.com/watch/embed/inspireorg-2417875" allowfullscreen="true" allow="autoplay"></iframe><p><a href="https://biteable.com/watch/inspireorg-2417875">dream.org</a> <br/>     <a href="https://www.children.org/">Help us</a>.</p>
+            </div>
+            
+        </div>
+        </div>
+    </section>
+    <!----Programs---->
+    <section id="services">
+    <div class="container">
+        <h1>What We Do ?</h1>
+        </div> 
+        <div class="row srevices">
+        <div class="col-md-4 text-center">
+            <div class="icon">
+            
+            <i class="fa fa-book"></i>
+            </div>
+        <h3>EDUCATOINAL</h3>
+            <p>
+            Initiatives<br/>
+Pre-School[3-6 years]<br/>
+Non-Formal schools<br/>
+Residential schools for orphans and homeless children<br/></p>
+            </div>
+             <div class="col-md-4 text-center">
+            <div class="icon">
+            
+            <i class="fa fa-desktop"></i>
+            </div>
+        <h3>TRAINING</h3>
+            <p>
+                Coumputer based training for handeling organisational matters.<br/>
+programmimg and web-development training.<br/>
+Counselling for the students.<br/>
+</p>
+            </div>
+             <div class="col-md-4 text-center">
+            <div class="icon">
+            
+            <i class="fa fa-street-view"></i>
+            </div>
+        <h3>ENVIRONMENTAL</h3>
+            <p>
+                 Making and encouraging planting trees in the local waste lands.<br/>
+Creating about awareness of environment<br/>
+                 </p>
+            </div>
+        </div>
+    
+    </section>
+    <section id="team">
+    <div class="container">
+        <h1>Get Involved</h1>
+        <div class="row">
+        <div class="col-md-6 border-right profile-pic text-center">
+            <div class="img-box">
+            <img src="_gallery.inspire/photo-1532629345422-7515f3d16bb6.jpeg" width="400" height="242" class="img-responsive">
+                <h2>DONATE</h2>
+                <form>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">City</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3">
+    </div>
+  </div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0">Donate</legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+          <label class="form-check-label" for="gridRadios1">
+            $10
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+          <label class="form-check-label" for="gridRadios2">
+             $20
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" >
+          <label class="form-check-label" for="gridRadios3">
+            Custom
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+  <div class="form-group row">
+    <div class="col-sm-2">Checkbox</div>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck1">
+        <label class="form-check-label" for="gridCheck1">
+          I am Ready to Donate
+        </label>
+      </div>
+    </div>
+  </div>
+                    <br/><br/>
+                    <div class="color">
+  <div class="form-group row">
+    <div class="col-sm-10">
+        <button type="submit" class="btn btn-primary"> <a href="https://secure.ccavenue.com/transaction/transaction.do?command=initiateTransaction">Donate</a></button>
+    </div>
+  </div>
+                        </div>
+</form>
+</div>
+            </div>
+            
+            
+            <div class="col-md-6 profile-pic text-center">
+            <div class="img-box">
+            <img src="_gallery.inspire/photo-1531206715517-5c0ba140b2b8.jpeg" width="400" height="242" class="img-responsive">
+                <h2>VOLUNTEER</h2>
+               <form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputnumber">Phone</label>
+      <input type="password" class="form-control" id="inputPassword4">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        I am Ready to Volunteer
+      </label>
+    </div>
+  </div>
+                   <div class="color">
+  <button type="submit" class="btn btn-primary"><a href="https://www.smilefoundationindia.org/volunteers.asp">Volunteer</a></button>
+                   </div>
+</form> 
+                
+                
+                
+                
+</div>
+            </div>
+            
+             </div>
+        </div>
+    </section>
+    <!-----Gallery----->
+    <section id="gallery">
+        <div class="container">
+    <h1 align="center">Gallery</h1>    
+        
+        <div class="container gallery-container">
+
+    
+    <div class="tz-gallery">
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="_gallery.inspire/photo-1542810634-71277d95dcbb.jpeg">
+                    <img src="_gallery.inspire/photo-1542810634-71277d95dcbb.jpeg"  width="400" height="242"  alt="School">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="_gallery.inspire/photo-1524178232363-1fb2b075b655.jpeg">
+                    <img src="_gallery.inspire/photo-1524178232363-1fb2b075b655.jpeg"  width="400" height="242"  alt="Bridge">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <a class="lightbox" href="_gallery.inspire/photo-1571008592377-e362723e8998.jpeg">
+                    <img src="_gallery.inspire/photo-1571008592377-e362723e8998.jpeg"  width="400" height="242"  alt="Tunnel">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="_gallery.inspire/photo-1551855350-c86caeaf8707.jpeg">
+                    <img src="_gallery.inspire/photo-1551855350-c86caeaf8707.jpeg"  width="400" height="242"  alt="voluntering">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="_gallery.inspire/photo-1526976668912-1a811878dd37.jpeg">
+                    <img src="_gallery.inspire/photo-1526976668912-1a811878dd37.jpeg"  width="400" height="242"  alt="Rails">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="_gallery.inspire/photo-1505155485412-30b3a45080ec.jpeg">
+                    <img src="_gallery.inspire/photo-1505155485412-30b3a45080ec.jpeg"  width="400" height="242"  alt="Photo">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="_gallery.inspire/Screenshot_2019_1213_224044.png">
+                    <img src="_gallery.inspire/Screenshot_2019_1213_224044.png"  width="400" height="242"  alt="Certificate">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="_gallery.inspire/Screenshot_2019_1214_152828.png">
+                    <img src="_gallery.inspire/Screenshot_2019_1214_152828.png"  width="400" height="242"  alt="Certificate">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="_gallery.inspire/Screenshot_2019_1214_153027.png">
+                    <img src="_gallery.inspire/Screenshot_2019_1214_153027.png"  width="400" height="242"  alt="Certificate">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+        </div>
+    
+    
+    
+    </section>
+
+    
+    
+    <!-----CONTACT US---->
+    <section id="contact">
+    <div class="container">
+        <h1 align="center">Contact Us</h1>
+        <div class="row">
+        <div class="col-md-6">
+            <form class="contact-form">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                <input type="number" class="form-control" placeholder="Phone number">
+                </div>
+                <div class="form-group">
+                <input type="email" class="form-control" placeholder="Emil id">
+                </div>
+                <div class="form-group">
+                    <text-area class="form-control" rows="4" placeholder="Your Message"></text-area>
+                </div>
+                <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
+            </form>                       
+            </div>
+            <div class="col-md-6 contact-info">
+                <div id="address">
+            <div class="follow"><i class="fa fa-map-marker"></i><b>Address:</b>
+                <br/>161 B/4, 3rd Floor, <br/>Gulmohar House, 
+                <br/>Yusuf Sarai Community Centre,<br/> New Delhi - 110049<br/></div>
+                <div class="follow"><i class="fa fa-phone"></i>
+Phone: +91-11-43123700, +91-11-41354564/65/66
+                    <br/>Fax: +91-11-41354454
+                </div>
+                    <div class="follow"><i class="fa fa-envelope-o"></i> 
+Email: info@dream.org</div>
+                    </div>
+            </div>
+            
+        </div>
+        </div>
+    
+    
+    
+    </section>
+    <!------Footer------->
+    <section id="footer">
+        <div class="footer-main-div">
+        
+            <div class="footer-social-icons">
+            <ul>
+                <li><a href="https://www.facebook.com/smilefoundationindia.org/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/smilefoundation"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.smilefoundationindia.org/"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-menu-one">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#team">Get Involved</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-menu-two">
+            <ul>
+                
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#">Certifications</a></li>
+                <li><a href="#address">Address</a></li>
+                <li><a href="#gallry">News</a></li>
+                </ul>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="copyright">
+        &copy;dream.org2019   .All rights reserved
+        </div>
+        </div>
+    </section>
+    
+    
+    <!-------------Footer end---------------->
+    <script>
+    
+    
+    
+    /*!
+ * smooth-scroll v16.1.1
+ * Animate scrolling to anchor links
+ * (c) 2019 Chris Ferdinandi
+ * MIT License
+ * http://github.com/cferdinandi/smooth-scroll
+ */
+
+(function (root, factory) {
+	if (typeof define === 'function' && define.amd) {
+		define([], (function () {
+			return factory(root);
+		}));
+	} else if (typeof exports === 'object') {
+		module.exports = factory(root);
+	} else {
+		root.SmoothScroll = factory(root);
+	}
+})(typeof global !== 'undefined' ? global : typeof window !== 'undefined' ? window : this, (function (window) {
+
+	'use strict';
+
+	//
+	// Default settings
+	//
+
+	var defaults = {
+
+		// Selectors
+		ignore: '[data-scroll-ignore]',
+		header: null,
+		topOnEmptyHash: true,
+
+		// Speed & Duration
+		speed: 800,
+		speedAsDuration: false,
+		durationMax: null,
+		durationMin: null,
+		clip: true,
+		offset: 30,
+
+		// Easing
+		easing: 'easeInOutCubic',
+		customEasing: null,
+
+		// History
+		updateURL: true,
+		popstate: true,
+
+		// Custom Events
+		emitEvents: true
+
+	};
+
+
+	//
+	// Utility Methods
+	//
+
+	/**
+	 * Check if browser supports required methods
+	 * @return {Boolean} Returns true if all required methods are supported
+	 */
+	var supports = function () {
+		return (
+			'querySelector' in document &&
+			'addEventListener' in window &&
+			'requestAnimationFrame' in window &&
+			'closest' in window.Element.prototype
+		);
+	};
+
+	/**
+	 * Merge two or more objects together.
+	 * @param   {Object}   objects  The objects to merge together
+	 * @returns {Object}            Merged values of defaults and options
+	 */
+	var extend = function () {
+		var merged = {};
+		Array.prototype.forEach.call(arguments, (function (obj) {
+			for (var key in obj) {
+				if (!obj.hasOwnProperty(key)) return;
+				merged[key] = obj[key];
+			}
+		}));
+		return merged;
+	};
+
+	/**
+	 * Check to see if user prefers reduced motion
+	 * @param  {Object} settings Script settings
+	 */
+	var reduceMotion = function () {
+		if ('matchMedia' in window && window.matchMedia('(prefers-reduced-motion)').matches) {
+			return true;
+		}
+		return false;
+	};
+
+	/**
+	 * Get the height of an element.
+	 * @param  {Node} elem The element to get the height of
+	 * @return {Number}    The element's height in pixels
+	 */
+	var getHeight = function (elem) {
+		return parseInt(window.getComputedStyle(elem).height, 10);
+	};
+
+	/**
+	 * Escape special characters for use with querySelector
+	 * @author Mathias Bynens
+	 * @link https://github.com/mathiasbynens/CSS.escape
+	 * @param {String} id The anchor ID to escape
+	 */
+	var escapeCharacters = function (id) {
+
+		// Remove leading hash
+		if (id.charAt(0) === '#') {
+			id = id.substr(1);
+		}
+
+		var string = String(id);
+		var length = string.length;
+		var index = -1;
+		var codeUnit;
+		var result = '';
+		var firstCodeUnit = string.charCodeAt(0);
+		while (++index < length) {
+			codeUnit = string.charCodeAt(index);
+			// Note: there’s no need to special-case astral symbols, surrogate
+			// pairs, or lone surrogates.
+
+			// If the character is NULL (U+0000), then throw an
+			// `InvalidCharacterError` exception and terminate these steps.
+			if (codeUnit === 0x0000) {
+				throw new InvalidCharacterError(
+					'Invalid character: the input contains U+0000.'
+				);
+			}
+
+			if (
+				// If the character is in the range [\1-\1F] (U+0001 to U+001F) or is
+				// U+007F, […]
+				(codeUnit >= 0x0001 && codeUnit <= 0x001F) || codeUnit == 0x007F ||
+				// If the character is the first character and is in the range [0-9]
+				// (U+0030 to U+0039), […]
+				(index === 0 && codeUnit >= 0x0030 && codeUnit <= 0x0039) ||
+				// If the character is the second character and is in the range [0-9]
+				// (U+0030 to U+0039) and the first character is a `-` (U+002D), […]
+				(
+					index === 1 &&
+					codeUnit >= 0x0030 && codeUnit <= 0x0039 &&
+					firstCodeUnit === 0x002D
+				)
+			) {
+				// http://dev.w3.org/csswg/cssom/#escape-a-character-as-code-point
+				result += '\\' + codeUnit.toString(16) + ' ';
+				continue;
+			}
+
+			// If the character is not handled by one of the above rules and is
+			// greater than or equal to U+0080, is `-` (U+002D) or `_` (U+005F), or
+			// is in one of the ranges [0-9] (U+0030 to U+0039), [A-Z] (U+0041 to
+			// U+005A), or [a-z] (U+0061 to U+007A), […]
+			if (
+				codeUnit >= 0x0080 ||
+				codeUnit === 0x002D ||
+				codeUnit === 0x005F ||
+				codeUnit >= 0x0030 && codeUnit <= 0x0039 ||
+				codeUnit >= 0x0041 && codeUnit <= 0x005A ||
+				codeUnit >= 0x0061 && codeUnit <= 0x007A
+			) {
+				// the character itself
+				result += string.charAt(index);
+				continue;
+			}
+
+			// Otherwise, the escaped character.
+			// http://dev.w3.org/csswg/cssom/#escape-a-character
+			result += '\\' + string.charAt(index);
+
+		}
+
+		// Return sanitized hash
+		return '#' + result;
+
+	};
+
+	/**
+	 * Calculate the easing pattern
+	 * @link https://gist.github.com/gre/1650294
+	 * @param {String} type Easing pattern
+	 * @param {Number} time Time animation should take to complete
+	 * @returns {Number}
+	 */
+	var easingPattern = function (settings, time) {
+		var pattern;
+
+		// Default Easing Patterns
+		if (settings.easing === 'easeInQuad') pattern = time * time; // accelerating from zero velocity
+		if (settings.easing === 'easeOutQuad') pattern = time * (2 - time); // decelerating to zero velocity
+		if (settings.easing === 'easeInOutQuad') pattern = time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time; // acceleration until halfway, then deceleration
+		if (settings.easing === 'easeInCubic') pattern = time * time * time; // accelerating from zero velocity
+		if (settings.easing === 'easeOutCubic') pattern = (--time) * time * time + 1; // decelerating to zero velocity
+		if (settings.easing === 'easeInOutCubic') pattern = time < 0.5 ? 4 * time * time * time : (time - 1) * (2 * time - 2) * (2 * time - 2) + 1; // acceleration until halfway, then deceleration
+		if (settings.easing === 'easeInQuart') pattern = time * time * time * time; // accelerating from zero velocity
+		if (settings.easing === 'easeOutQuart') pattern = 1 - (--time) * time * time * time; // decelerating to zero velocity
+		if (settings.easing === 'easeInOutQuart') pattern = time < 0.5 ? 8 * time * time * time * time : 1 - 8 * (--time) * time * time * time; // acceleration until halfway, then deceleration
+		if (settings.easing === 'easeInQuint') pattern = time * time * time * time * time; // accelerating from zero velocity
+		if (settings.easing === 'easeOutQuint') pattern = 1 + (--time) * time * time * time * time; // decelerating to zero velocity
+		if (settings.easing === 'easeInOutQuint') pattern = time < 0.5 ? 16 * time * time * time * time * time : 1 + 16 * (--time) * time * time * time * time; // acceleration until halfway, then deceleration
+
+		// Custom Easing Patterns
+		if (!!settings.customEasing) pattern = settings.customEasing(time);
+
+		return pattern || time; // no easing, no acceleration
+	};
+
+	/**
+	 * Determine the document's height
+	 * @returns {Number}
+	 */
+	var getDocumentHeight = function () {
+		return Math.max(
+			document.body.scrollHeight, document.documentElement.scrollHeight,
+			document.body.offsetHeight, document.documentElement.offsetHeight,
+			document.body.clientHeight, document.documentElement.clientHeight
+		);
+	};
+
+	/**
+	 * Calculate how far to scroll
+	 * Clip support added by robjtede - https://github.com/cferdinandi/smooth-scroll/issues/405
+	 * @param {Element} anchor       The anchor element to scroll to
+	 * @param {Number}  headerHeight Height of a fixed header, if any
+	 * @param {Number}  offset       Number of pixels by which to offset scroll
+	 * @param {Boolean} clip         If true, adjust scroll distance to prevent abrupt stops near the bottom of the page
+	 * @returns {Number}
+	 */
+	var getEndLocation = function (anchor, headerHeight, offset, clip) {
+		var location = 0;
+		if (anchor.offsetParent) {
+			do {
+				location += anchor.offsetTop;
+				anchor = anchor.offsetParent;
+			} while (anchor);
+		}
+		location = Math.max(location - headerHeight - offset, 0);
+		if (clip) {
+			location = Math.min(location, getDocumentHeight() - window.innerHeight);
+		}
+ 		return location;
+	};
+
+	/**
+	 * Get the height of the fixed header
+	 * @param  {Node}   header The header
+	 * @return {Number}        The height of the header
+	 */
+	var getHeaderHeight = function (header) {
+		return !header ? 0 : (getHeight(header) + header.offsetTop);
+	};
+
+	/**
+	 * Calculate the speed to use for the animation
+	 * @param  {Number} distance The distance to travel
+	 * @param  {Object} settings The plugin settings
+	 * @return {Number}          How fast to animate
+	 */
+	var getSpeed = function (distance, settings) {
+		var speed = settings.speedAsDuration ? settings.speed : Math.abs(distance / 1000 * settings.speed);
+		if (settings.durationMax && speed > settings.durationMax) return settings.durationMax;
+		if (settings.durationMin && speed < settings.durationMin) return settings.durationMin;
+		return parseInt(speed, 10);
+	};
+
+	var setHistory = function (options) {
+
+		// Make sure this should run
+		if (!history.replaceState || !options.updateURL || history.state) return;
+
+		// Get the hash to use
+		var hash = window.location.hash;
+		hash = hash ? hash : '';
+
+		// Set a default history
+		history.replaceState(
+			{
+				smoothScroll: JSON.stringify(options),
+				anchor: hash ? hash : window.pageYOffset
+			},
+			document.title,
+			hash ? hash : window.location.href
+		);
+
+	};
+
+	/**
+	 * Update the URL
+	 * @param  {Node}    anchor  The anchor that was scrolled to
+	 * @param  {Boolean} isNum   If true, anchor is a number
+	 * @param  {Object}  options Settings for Smooth Scroll
+	 */
+	var updateURL = function (anchor, isNum, options) {
+
+		// Bail if the anchor is a number
+		if (isNum) return;
+
+		// Verify that pushState is supported and the updateURL option is enabled
+		if (!history.pushState || !options.updateURL) return;
+
+		// Update URL
+		history.pushState(
+			{
+				smoothScroll: JSON.stringify(options),
+				anchor: anchor.id
+			},
+			document.title,
+			anchor === document.documentElement ? '#top' : '#' + anchor.id
+		);
+
+	};
+
+	/**
+	 * Bring the anchored element into focus
+	 * @param {Node}     anchor      The anchor element
+	 * @param {Number}   endLocation The end location to scroll to
+	 * @param {Boolean}  isNum       If true, scroll is to a position rather than an element
+	 */
+	var adjustFocus = function (anchor, endLocation, isNum) {
+
+		// Is scrolling to top of page, blur
+		if (anchor === 0) {
+			document.body.focus();
+		}
+
+		// Don't run if scrolling to a number on the page
+		if (isNum) return;
+
+		// Otherwise, bring anchor element into focus
+		anchor.focus();
+		if (document.activeElement !== anchor) {
+			anchor.setAttribute('tabindex', '-1');
+			anchor.focus();
+			anchor.style.outline = 'none';
+		}
+		window.scrollTo(0 , endLocation);
+
+	};
+
+	/**
+	 * Emit a custom event
+	 * @param  {String} type    The event type
+	 * @param  {Object} options The settings object
+	 * @param  {Node}   anchor  The anchor element
+	 * @param  {Node}   toggle  The toggle element
+	 */
+	var emitEvent = function (type, options, anchor, toggle) {
+		if (!options.emitEvents || typeof window.CustomEvent !== 'function') return;
+		var event = new CustomEvent(type, {
+			bubbles: true,
+			detail: {
+				anchor: anchor,
+				toggle: toggle
+			}
+		});
+		document.dispatchEvent(event);
+	};
+
+
+	//
+	// SmoothScroll Constructor
+	//
+
+	var SmoothScroll = function (selector, options) {
+
+		//
+		// Variables
+		//
+
+		var smoothScroll = {}; // Object for public APIs
+		var settings, anchor, toggle, fixedHeader, eventTimeout, animationInterval;
+
+
+		//
+		// Methods
+		//
+
+		/**
+		 * Cancel a scroll-in-progress
+		 */
+		smoothScroll.cancelScroll = function (noEvent) {
+			cancelAnimationFrame(animationInterval);
+			animationInterval = null;
+			if (noEvent) return;
+			emitEvent('scrollCancel', settings);
+		};
+
+		/**
+		 * Start/stop the scrolling animation
+		 * @param {Node|Number} anchor  The element or position to scroll to
+		 * @param {Element}     toggle  The element that toggled the scroll event
+		 * @param {Object}      options
+		 */
+		smoothScroll.animateScroll = function (anchor, toggle, options) {
+
+			// Cancel any in progress scrolls
+			smoothScroll.cancelScroll();
+
+			// Local settings
+			var _settings = extend(settings || defaults, options || {}); // Merge user options with defaults
+
+			// Selectors and variables
+			var isNum = Object.prototype.toString.call(anchor) === '[object Number]' ? true : false;
+			var anchorElem = isNum || !anchor.tagName ? null : anchor;
+			if (!isNum && !anchorElem) return;
+			var startLocation = window.pageYOffset; // Current location on the page
+			if (_settings.header && !fixedHeader) {
+				// Get the fixed header if not already set
+				fixedHeader = document.querySelector(_settings.header);
+			}
+			var headerHeight = getHeaderHeight(fixedHeader);
+			var endLocation = isNum ? anchor : getEndLocation(anchorElem, headerHeight, parseInt((typeof _settings.offset === 'function' ? _settings.offset(anchor, toggle) : _settings.offset), 10), _settings.clip); // Location to scroll to
+			var distance = endLocation - startLocation; // distance to travel
+			var documentHeight = getDocumentHeight();
+			var timeLapsed = 0;
+			var speed = getSpeed(distance, _settings);
+			var start, percentage, position;
+
+			/**
+			 * Stop the scroll animation when it reaches its target (or the bottom/top of page)
+			 * @param {Number} position Current position on the page
+			 * @param {Number} endLocation Scroll to location
+			 * @param {Number} animationInterval How much to scroll on this loop
+			 */
+			var stopAnimateScroll = function (position, endLocation) {
+
+				// Get the current location
+				var currentLocation = window.pageYOffset;
+
+				// Check if the end location has been reached yet (or we've hit the end of the document)
+				if (position == endLocation || currentLocation == endLocation || ((startLocation < endLocation && window.innerHeight + currentLocation) >= documentHeight)) {
+
+					// Clear the animation timer
+					smoothScroll.cancelScroll(true);
+
+					// Bring the anchored element into focus
+					adjustFocus(anchor, endLocation, isNum);
+
+					// Emit a custom event
+					emitEvent('scrollStop', _settings, anchor, toggle);
+
+					// Reset start
+					start = null;
+					animationInterval = null;
+
+					return true;
+
+				}
+			};
+
+			/**
+			 * Loop scrolling animation
+			 */
+			var loopAnimateScroll = function (timestamp) {
+				if (!start) { start = timestamp; }
+				timeLapsed += timestamp - start;
+				percentage = speed === 0 ? 0 : (timeLapsed / speed);
+				percentage = (percentage > 1) ? 1 : percentage;
+				position = startLocation + (distance * easingPattern(_settings, percentage));
+				window.scrollTo(0, Math.floor(position));
+				if (!stopAnimateScroll(position, endLocation)) {
+					animationInterval = window.requestAnimationFrame(loopAnimateScroll);
+					start = timestamp;
+				}
+			};
+
+			/**
+			 * Reset position to fix weird iOS bug
+			 * @link https://github.com/cferdinandi/smooth-scroll/issues/45
+			 */
+			if (window.pageYOffset === 0) {
+				window.scrollTo(0, 0);
+			}
+
+			// Update the URL
+			updateURL(anchor, isNum, _settings);
+
+			// If the user prefers reduced motion, jump to location
+			if (reduceMotion()) {
+				window.scrollTo(0, Math.floor(endLocation));
+				return;
+			}
+
+			// Emit a custom event
+			emitEvent('scrollStart', _settings, anchor, toggle);
+
+			// Start scrolling animation
+			smoothScroll.cancelScroll(true);
+			window.requestAnimationFrame(loopAnimateScroll);
+
+		};
+
+		/**
+		 * If smooth scroll element clicked, animate scroll
+		 */
+		var clickHandler = function (event) {
+
+			// Don't run if event was canceled but still bubbled up
+			// By @mgreter - https://github.com/cferdinandi/smooth-scroll/pull/462/
+			if (event.defaultPrevented) return;
+
+			// Don't run if right-click or command/control + click or shift + click
+			if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey) return;
+
+			// Check if event.target has closest() method
+			// By @totegi - https://github.com/cferdinandi/smooth-scroll/pull/401/
+			if (!('closest' in event.target)) return;
+
+			// Check if a smooth scroll link was clicked
+			toggle = event.target.closest(selector);
+			if (!toggle || toggle.tagName.toLowerCase() !== 'a' || event.target.closest(settings.ignore)) return;
+
+			// Only run if link is an anchor and points to the current page
+			if (toggle.hostname !== window.location.hostname || toggle.pathname !== window.location.pathname || !/#/.test(toggle.href)) return;
+
+			// Get an escaped version of the hash
+			var hash;
+			try {
+				hash = escapeCharacters(decodeURIComponent(toggle.hash));
+			} catch(e) {
+				hash = escapeCharacters(toggle.hash);
+			}
+			console.log(hash);
+
+			// Get the anchored element
+			var anchor;
+			if (hash === '#') {
+				if (!settings.topOnEmptyHash) return;
+				anchor = document.documentElement;
+			} else {
+				anchor = document.querySelector(hash);
+			}
+			anchor = !anchor && hash === '#top' ? document.documentElement : anchor;
+
+			// If anchored element exists, scroll to it
+			if (!anchor) return;
+			event.preventDefault();
+			setHistory(settings);
+			smoothScroll.animateScroll(anchor, toggle);
+
+		};
+
+		/**
+		 * Animate scroll on popstate events
+		 */
+		var popstateHandler = function (event) {
+
+			// Stop if history.state doesn't exist (ex. if clicking on a broken anchor link).
+			// fixes `Cannot read property 'smoothScroll' of null` error getting thrown.
+			if (history.state === null) return;
+
+			// Only run if state is a popstate record for this instantiation
+			if (!history.state.smoothScroll || history.state.smoothScroll !== JSON.stringify(settings)) return;
+
+			// Only run if state includes an anchor
+
+			// if (!history.state.anchor && history.state.anchor !== 0) return;
+
+			// Get the anchor
+			var anchor = history.state.anchor;
+			if (typeof anchor === 'string' && anchor) {
+				anchor = document.querySelector(escapeCharacters(history.state.anchor));
+				if (!anchor) return;
+			}
+
+			// Animate scroll to anchor link
+			smoothScroll.animateScroll(anchor, null, {updateURL: false});
+
+		};
+
+		/**
+		 * Destroy the current initialization.
+		 */
+		smoothScroll.destroy = function () {
+
+			// If plugin isn't already initialized, stop
+			if (!settings) return;
+
+			// Remove event listeners
+			document.removeEventListener('click', clickHandler, false);
+			window.removeEventListener('popstate', popstateHandler, false);
+
+			// Cancel any scrolls-in-progress
+			smoothScroll.cancelScroll();
+
+			// Reset variables
+			settings = null;
+			anchor = null;
+			toggle = null;
+			fixedHeader = null;
+			eventTimeout = null;
+			animationInterval = null;
+
+		};
+
+		/**
+		 * Initialize Smooth Scroll
+		 * @param {Object} options User settings
+		 */
+		var init = function () {
+
+			// feature test
+			if (!supports()) throw 'Smooth Scroll: This browser does not support the required JavaScript methods and browser APIs.';
+
+			// Destroy any existing initializations
+			smoothScroll.destroy();
+
+			// Selectors and variables
+			settings = extend(defaults, options || {}); // Merge user options with defaults
+			fixedHeader = settings.header ? document.querySelector(settings.header) : null; // Get the fixed header
+
+			// When a toggle is clicked, run the click handler
+			document.addEventListener('click', clickHandler, false);
+
+			// If updateURL and popState are enabled, listen for pop events
+			if (settings.updateURL && settings.popstate) {
+				window.addEventListener('popstate', popstateHandler, false);
+			}
+
+		};
+
+
+		//
+		// Initialize plugin
+		//
+
+		init();
+
+
+		//
+		// Public APIs
+		//
+
+		return smoothScroll;
+
+	};
+
+	return SmoothScroll;
+
+}));
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+    <script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+       </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
